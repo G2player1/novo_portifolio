@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enos Henrique - Portfólio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/d05c18a419.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__nav-link header__nav-link--active" id="1" href="#home" onclick="troca('1')">􀎞 Home</a>
+            <a class="header__nav-link" id="2" href="#about" onclick="troca('2')">􀉩 Sobre mim</a>
+            <a class="header__nav-link" id="3" href="#resume" onclick="troca('3')">􀉇 Currículo</a>
+            <a class="header__nav-link" id="4" href="#projects" onclick="troca('4')">􀈕 Projetos</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="section section--spacer" id="home"></section>
+    <section class="section section--hero" id="hero">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    Eleve seu negócio digital a outro nível com um
+                    <span class="hero__title-highlight">Back-end de qualidade!</span>
+                </h1>
+                <p class="hero__description">
+                    Olá! Sou Enos Henrique, desenvolvedor Back-End com foco no ecossistema Spring.
+                    Sou estudante no IFMA cursando a faculdade de Sistemas de Informação. Vamos conversar?
+                </p>
+                <div class="hero__social-buttons">
+                    <a class="social-button social-button--github"
+                        href="https://github.com/G2player1?tab=overview&from=2024-07-01&to=2024-07-03" target="_blank">
+                        <i class="fab fa-github social-button__icon"></i>
+                        <span class="social-button__text">GitHub</span>
+                    </a>
+                    <a class="social-button social-button--linkedin"
+                        href="https://www.linkedin.com/in/enos-henrique-silva-machado-3a3242247/" target="_blank">
+                        <i class="fab fa-linkedin-in social-button__icon"></i>
+                        <span class="social-button__text">LinkedIn</span>
+                    </a>
+                    <a class="social-button social-button--instagram"
+                        href="https://www.instagram.com/enoshenrique_?igsh=bWRyZXY1NHU0OG10" target="_blank">
+                        <i class="fab fa-instagram social-button__icon"></i>
+                        <span class="social-button__text">Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="./assets/Enos_img.jpeg" alt="Foto de Enos Henrique" class="hero__photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section section--spacer" id="about"></section>
+    <section class="section section--about" id="about-content">
+        <div class="about__content">
+            <div class="about__text">
+                <h2 class="about__title">Sobre mim!</h2>
+
+                <div class="about__topic">
+                    <h3 class="about__topic-title">Apresentação Pessoal:</h3>
+                    <p class="about__topic-description">
+                        Olá, sou Enos Henrique, desenvolvedor back-end de 19 anos com formação técnica e
+                        vivência prática em construção de sistemas. Minha jornada na tecnologia começou
+                        com o curso técnico em Informática, onde adquiri bases sólidas em:
+                    </p>
+                    <ul class="about__topic-list">
+                        <div class="about__topic-item">Desenvolvimento de software com Java e C</div>
+                        <div class="about__topic-item">Modelagem de bancos de dados (MySQL) e diagramação UML/ER</div>
+                        <div class="about__topic-item">Implementação de Design Patterns e metodologias ágeis</div>
+                    </ul>
+                </div>
+
+                <div class="about__topic">
+                    <h3 class="about__topic-title">Evolução Profissional:</h3>
+                    <p class="about__topic-description">
+                        Como estudante de Desenvolvimento de Sistemas, expandi meus conhecimentos para:
+                    </p>
+                    <ul class="about__topic-list">
+                        <div class="about__topic-item">Construção de aplicações web com Python e Flask</div>
+                        <div class="about__topic-item">Desenvolvimento front-end (JavaScript, HTML, CSS)</div>
+                        <div class="about__topic-item">Integração entre sistemas e APIs</div>
+                    </ul>
+                </div>
+
+                <div class="about__topic">
+                    <h3 class="about__topic-title">Especialização Spring:</h3>
+                    <p class="about__topic-description">
+                        No programa Oracle Next Education (ONE), alcancei proficiência em:
+                    </p>
+                    <ul class="about__topic-list">
+                        <div class="about__topic-item">Arquitetura de APIs REST com Spring Boot</div>
+                        <div class="about__topic-item">Persistência de dados com JPA/Hibernate</div>
+                        <div class="about__topic-item">Versionamento de bancos via Flyway Migrate</div>
+                        <div class="about__topic-item">Integração com IA (ChatGPT)</div>
+                        <div class="about__topic-item">Desenvolvimento de diversos projetos práticos</div>
+                    </ul>
+                </div>
+
+                <div class="about__topic">
+                    <h3 class="about__topic-title">Próxima Etapa:</h3>
+                    <p class="about__topic-description">
+                        Atualmente, fui selecionado para o programa Jovem Tech em parceria com empresas
+                        líderes como Porto do Itaqui, Pulse, Suzano e COPI, onde estou ampliando meu
+                        conhecimento em desenvolvimento de sistemas em ambientes corporativos reais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about__skills">
+                <div class="skill-icon">
+                    <img src="./assets/icons/java.png" alt="Java" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/python.png" alt="Python" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/mysql.png" alt="MySQL" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/base-de-dados.png" alt="PostgreSQL" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/js.png" alt="JavaScript" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/html.png" alt="HTML" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/css-3.png" alt="CSS" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/github.png" alt="GitHub" class="skill-icon__image">
+                </div>
+                <div class="skill-icon">
+                    <img src="./assets/icons/springboot.png" alt="Spring Boot" class="skill-icon__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section class="section section--spacer" id="resume"></section>
+    <section class="section section--resume" id="resume-content">
+        <div class="resume__content">
+            <h2 class="resume__title">Certificações e Currículo</h2>
+            <div class="resume__document">
+                <div class="resume__pdf-container">
+                    <object data="./assets/certificados/Certificado_SpringBoot.pdf" type="application/pdf"
+                        class="resume__pdf">
+                        <p>Seu navegador não suporta visualização de PDF.
+                            <a href="./assets/certificados/Certificado_SpringBoot.pdf" target="_blank">
+                                Clique aqui para baixar o certificado
+                            </a>
+                        </p>
+                    </object>
+                </div>
+                <a href="./assets/certificados/Certificado_SpringBoot.pdf" download class="resume__download">
+                    <i class="fas fa-download"></i>
+                    Baixar Certificado
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section section--spacer" id="projects"></section>
+    <section class="section section--projects" id="projects-content">
+        <div class="projects__content">
+            <h2 class="projects__title">Meus Projetos</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <h3 class="project-card__title">API REST com Spring Boot</h3>
+                    <p class="project-card__description">
+                        Sistema completo de gerenciamento desenvolvido com Spring Boot,
+                        incluindo autenticação JWT, persistência com JPA/Hibernate e
+                        integração com banco de dados MySQL.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-card__title">Sistema Web com Python Flask</h3>
+                    <p class="project-card__description">
+                        Aplicação web responsiva desenvolvida com Flask, implementando
+                        CRUD completo, autenticação de usuários e interface moderna
+                        com HTML5 e CSS3.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-card__title">Integração com IA</h3>
+                    <p class="project-card__description">
+                        Projeto inovador integrando ChatGPT API com aplicação Java,
+                        criando um assistente inteligente para automação de tarefas
+                        e processamento de linguagem natural.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL SPACER -->
+    <section class="section section--spacer section--final"></section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer__text">Desenvolvido por Enos Henrique Silva Machado</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

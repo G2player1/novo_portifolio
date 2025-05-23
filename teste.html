@@ -1,0 +1,142 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A scaled corrected CSS parallax demo by Keith Clark</title>
+    <meta name="description" content="Demonstration using scale correction to fix distance offset when creating a pure CSS parallax scrolling effect">
+    <style>
+        .parallax {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-perspective: 1px;
+            perspective: 1px;
+        }
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .parallax__layer--base {
+            -webkit-transform: translateZ(1);
+            transform: translateZ(1);
+        }
+        .parallax__layer--back {
+            -webkit-transform: translateZ(-3px) scale(3);
+            transform: translateZ(-3px) scale(3);
+        }
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            font: 100% / 1.5 Arial;
+        }
+        .parallax {
+            font-size: 200%;
+        }
+        .parallax__layer {
+            padding: 100vh 0;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .demo__info {
+            position: absolute;
+            z-index:100;
+            bottom: 1vh;
+            top: auto;
+            font-size:80%;
+            text-align:center;
+            width: 100%;
+        }
+    </style>
+    <style type="text/css">  
+        .ali-helper-trend-card {    
+            border-left: 1px solid lightgrey;  
+        }  
+        .ali-helper-trend-card:first-child {    
+            border-left: none;  
+        }  
+        .ali-helper-trend-items-navigation-button {    
+            padding: 1px 8px;    
+            font-size: 16px;    
+            font-weight: bolder;    
+            background-color: white;    
+            color: #FF530D;    
+            cursor: pointer;  
+        }  .ali-helper-trend-items-navigation-button[disabled] {    
+            padding: 1px 8px;    
+            font-size: 16px;    
+            background-color: lightgrey;    
+            color: black;    
+            cursor: not-allowed;  
+        }  
+        .ali-helper-trend-items {    
+            display: flex;    
+            flex-direction: column;    
+            margin-top: 10px;    
+            border-radius: 15px;    
+            background-color: white;    
+            border-top-right-radius: 0;    
+            border-top-left-radius: 0;    
+            border: 1px solid rgb(18, 27, 33);    
+            border-top: none;  
+        }  
+        .ali-helper-trend-items.home {    
+            margin-top: 0;    
+            width: 1200px;    
+            min-width: 1200px;    
+            margin: auto;    
+            border-top-right-radius: 0;    
+            border-top-left-radius: 0;    
+            border: 1px solid rgb(18, 27, 33);    
+            border-top: none;    margin-bottom: 2px;  
+        }  
+        .ali-helper-trend-box-container {    
+            background-color: white;    
+            padding-bottom: 10px;  
+        }  
+        #ali-helper-popover-conteiner {    
+            position: absolute;    
+            bottom: 55px;    
+            left: 150px;    
+            width: 220px;    
+            background-color: white;    
+            border: 1px solid darkgrey;    
+            filter: drop-shadow(0 0 2rem black);    
+            border-radius: 5px;    
+            padding: 10px;    
+            padding-right: 20px;    
+            cursor: auto;  
+        }  
+        #ali-helper-popover-conteiner:before {    
+            content: " ";    
+            height: 0;    
+            position: absolute;    
+            width: 0;    
+            bottom: -20px;    
+            left: calc(50% - 10px);    
+            border: 10px solid transparent;    
+            border-top-color: white;  
+        }
+    </style>
+</head>
+
+<body>
+  <div class="parallax">
+    <div class="parallax__layer parallax__layer--back">
+      <div class="title">This is the background</div>
+    </div>
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">This is the foreground</div>
+    </div>
+  </div>
+</body>
+</html>
