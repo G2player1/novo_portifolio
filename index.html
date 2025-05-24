@@ -152,17 +152,35 @@
         <div class="resume__content">
             <h2 class="resume__title">Certificações e Currículo</h2>
             <div class="resume__document">
-                <div class="resume__pdf-container">
-                    <object data="./assets/certificados/Certificado_SpringBoot.pdf" type="application/pdf"
-                        class="resume__pdf">
-                        <p>Seu navegador não suporta visualização de PDF.
-                            <a href="./assets/certificados/Certificado_SpringBoot.pdf" target="_blank">
-                                Clique aqui para baixar o certificado
-                            </a>
-                        </p>
-                    </object>
+                <div class="resume__options-container">
+                    <ul class="resume__options-list">
+                        <li class="resume__option" onclick="trocarCertificado(5)">
+                            <p class="resume__option__text">Git e Github</p>
+                        </li>
+                        <li class="resume__option" onclick="trocarCertificado(7)">
+                            <p class="resume__option__text">HTML e CSS</p>
+                        </li>
+                        <li class="resume__option" onclick="trocarCertificado(4)">
+                            <p class="resume__option__text">Java e POO</p>
+                        </li>
+                        <li class="resume__option" onclick="trocarCertificado(1)">
+                            <p class="resume__option__text">Liga Jovem</p>
+                        </li>
+                        <li class="resume__option" onclick="trocarCertificado(6)">
+                            <p class="resume__option__text">Lógica e JS</p>
+                        </li>
+                        <li class="resume__option" onclick="trocarCertificado(3)">
+                            <p class="resume__option__text">SpringBoot</p>
+                        </li>
+                        <li class="resume__option" onclick="trocarCertificado(2)">
+                            <p class="resume__option__text">ONE</p>
+                        </li>
+                    </ul>
                 </div>
-                <a href="./assets/certificados/Certificado_SpringBoot.pdf" download class="resume__download">
+                <div class="resume__certificado-container">
+                    <img src="./assets/certificados/Certificado_SpringBoot_1.jpg" alt="Certificado_SpringBoot" class="resume__certificado" id="certificado">
+                </div>
+                <a href="./assets/certificados/Certificado_SpringBoot.pdf" download class="resume__download" id="download_btn">
                     <i class="fas fa-download"></i>
                     Baixar Certificado
                 </a>
